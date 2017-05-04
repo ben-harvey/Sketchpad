@@ -1,0 +1,66 @@
+.container {
+	
+	/*
+	flexbox:
+	
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+	width: 600px;*/
+	
+	/*
+	float
+
+	width: 300px;
+	height: 600px;
+	margin: auto;*/
+
+	width: 800px;
+	height: 800px;
+	margin: auto;
+
+}
+
+.col {
+	
+
+	/*
+	flexbox:
+
+	height: 10px;
+	width: 10px;
+	background-color: blue;
+	flex: 0 1 auto;
+	padding: 20px;
+	margin: 5px;
+	justify-content: space-around;
+	width: 100%
+	flex-grow: 0;*/
+	
+	/*float
+
+	width: 100px;
+	height: 100px;
+	outline: 1px solid;
+	float: left;*/
+
+	width: 12.5px;
+	height: 12.5px;
+	outline: 1px solid;
+	display: inline-block;
+	background-color: white;
+}
+.nav {
+	display: flex;
+	width: 800px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+}
+
+button {
+	margin
+	padding: 10px 5px;
+	background-color: silver;
+	border-radius: 5px;
+}
