@@ -11,6 +11,11 @@ $(document).ready(function() {
 	}, function() {
 		$(this).css("background-color", "blue");
 	});
+	
+	$('#clear').click(function () {
+		$('.col').css('background-color', 'white');
+	
+	});
 
 	});
 

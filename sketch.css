@@ -54,11 +54,13 @@
 	display: flex;
 	width: 800px;
 	flex-direction: row;
-	justify-content: space-between;
-	align-content: center;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 20px;
+
 }
 
-button {
+input {
 	margin
 	padding: 10px 5px;
 	background-color: silver;
