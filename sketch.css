@@ -1,8 +1,8 @@
 .container {
 	width: 800px;
-	height: 800px;
+	height: 805px;
 	margin: auto;
-	outline: 1px solid;
+	outline: 1px solid grey;
 }
 
 .col {
@@ -20,12 +20,39 @@
 	justify-content: space-around;
 	margin: auto;
 	margin-bottom: 20px;
+	/*margin-top: 20px;*/
 
 }
 
 input {
-	margin
-	padding: 10px 5px;
-	background-color: silver;
+	padding: 5px 10px;
+	background-color: white;
 	border-radius: 5px;
+	border: 1px solid grey;
+	font-size: 15px;
 }
+
+.ui-slider .ui-slider-handle:focus {
+	outline: 0;
+}
+
+#custom-handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+  }
+
+#slider {
+	width: 600px;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+input:focus {
+	outline: 0;
+}
+

@@ -3,11 +3,24 @@
 
 $(document).ready(function() {
 
-	var num = 4;
+
+
+	var num = 16;
 	
 	makeGrid(num);
 
+
+	
+	$( "#slider" ).on( "slidechange", function( event, ui ) {
+		console.log()
+		num = ui.value;
+		$('.col').remove();
+		makeGrid(num);
+	} );
+
+
 	function makeGrid(num) {	
+
 		for (i = 0; i < num * num; i++) {
 		$("<div>", {class: 'col'}).appendTo($(".container"))
 		};
@@ -21,10 +34,11 @@ $(document).ready(function() {
 		});
 
 	}
+
 	$('#colorpicker').on("change", function() {
 		makeGrid();
 		color = $("#colorpicker").spectrum('get');
-		console.log(color);
+		// console.log(color);
 		$(".col").hover(function() {
 			$(this).css("background-color", color);
 			}, function() {
@@ -56,6 +70,8 @@ $(document).ready(function() {
 	});
 	
 
+	
+	
 	
 
 	
