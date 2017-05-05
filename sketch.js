@@ -12,14 +12,26 @@ $(document).ready(function() {
 		$("<div>", {class: 'col'}).appendTo($(".container"))
 		};
 		makeSquare();
+		color = $("#colorpicker").spectrum('get')
+		console.log(color)
 		$(".col").hover(function() {
-			$(this).css("background-color", "blue");
+			$(this).css("background-color", color);
 			}, function() {
-			$(this).css("background-color", "blue");
+			$(this).css("background-color", color);
 		});
 
 	}
-	
+	$('#colorpicker').on("change", function() {
+		makeGrid();
+		color = $("#colorpicker").spectrum('get');
+		console.log(color);
+		$(".col").hover(function() {
+			$(this).css("background-color", color);
+			}, function() {
+			$(this).css("background-color", color);
+		});
+	});
+
 	function getInput() {
 		num = prompt('Please enter a number from 1-64 to resize the grid.');
 		console.log(num);

@@ -1,54 +1,17 @@
 .container {
-	
-	/*
-	flexbox:
-	
-	display: flex;
-	margin: auto;
-	flex-wrap: wrap;
-	width: 600px;*/
-	
-	/*
-	float
-
-	width: 300px;
-	height: 600px;
-	margin: auto;*/
-
 	width: 800px;
 	height: 800px;
 	margin: auto;
-
+	outline: 1px solid;
 }
 
 .col {
-	
-
-	/*
-	flexbox:
-
-	height: 10px;
-	width: 10px;
-	background-color: blue;
-	flex: 0 1 auto;
-	padding: 20px;
-	margin: 5px;
-	justify-content: space-around;
-	width: 100%
-	flex-grow: 0;*/
-	
-	/*float
-
-	width: 100px;
-	height: 100px;
-	outline: 1px solid;
-	float: left;*/
-
 	width: 12.5px;
 	height: 12.5px;
-	outline: 1px solid;
+	/*outline: 1px solid;*/
 	display: inline-block;
 	background-color: white;
+	border-radius: 50%;
 }
 .nav {
 	display: flex;
